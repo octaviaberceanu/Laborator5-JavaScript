@@ -1,0 +1,52 @@
+JavaScript fuctions:
+
+
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+reverseString("sirCaractere");
+
+
+
+function remove_character(str, index) 
+ {
+  sir = str.substring(10, index);
+  return (sir);
+ }
+console.log(remove_character("TehnologiiWEB",0));
+
+
+
+function divisible (number) {
+  if (number % 3 == 0 || nr % 7==0 ) {
+        return true;  
+    }
+    else {
+        return false;    
+    }
+}
+divisible(34);
+
+
+function checkNumber(number) {
+  if (isNaN(number)) {
+    return true;
+  }
+  return false;
+}
+console.log(checknumber(34));
+
+
+
+var sum = [0, 34, 2].reduce(add, 0);
+function add(x, y) {
+    return x + y;
+}
+console.log(sum);
+
+
+
+function checkprop(obj, key) {
+    return obj != null && hasOwnProperty.call(obj, key);
+  }
+console.log(checkprop({blue: "#0000FF", gray: "#808080"}, "blue"));
